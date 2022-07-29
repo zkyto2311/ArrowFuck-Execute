@@ -84,44 +84,76 @@
 		Memo:<br>
 		<ul>
 			<li>
-				BrainfuckとはUrban Müllerさんが開発した<br>
+				ArrowFuckとはBrainfuck影響を受けた<br>
 				難解プログラミング言語<br>
-				詳細→<a href="https://ja.wikipedia.org/wiki/Brainfuck">Brainfuck - Wikipedia</a>
+				Brainfuckの上位互換<br>
+				vと^の命令が追加された<br>
+				詳細→<a href="https://ja.wikipedia.org/wiki/ArrowFuck">ArrowFuck - Wikipedia</a><br>
 			</li>
 			<li>
-				Brainfuckの命令の意味
+				Brainfuckはこちら<br>
+				<a href="https://zkyto2311.github.io/Brainfuck-Execute">Brainfuck Execute</a>
+			</li>
+			<li>
+				上位互換なのでBrainfuckと同じコードが使える<br>
+			</li>
+			<li>
+				ArrowFuckの命令の意味
 				<table border="2">
 					<tr>
+						<td>ArrowFuck</td>
+						<td>Brainfuck</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>></td>
 						<td>></td>
 						<td>ポインタを右に1つ移動</td>
 					</tr>
 					<tr>
 						<td><</td>
+						<td><</td>
 						<td>ポインタを左に1つ移動</td>
 					</tr>
 					<tr>
+						<td>+</td>
 						<td>+</td>
 						<td>ポインタが指すメモリの値を+1</td>
 					</tr>
 					<tr>
 						<td>-</td>
+						<td>-</td>
 						<td>ポインタが指すメモリの値を-1</td>
 					</tr>
 					<tr>
+						<td>.</td>
 						<td>.</td>
 						<td>ポインタが指す値を文字として出力する</td>
 					</tr>
 					<tr>
 						<td>,</td>
+						<td>,</td>
 						<td>入力から1バイト読み込み指しているポインタに代入</td>
 					</tr>
 					<tr>
+						<td>[</td>
 						<td>[</td>
 						<td>ポインタが指す値が0なら対応する]までジャンプ</td>
 					</tr>
 					<tr>
 						<td>]</td>
+						<td>]</td>
 						<td>ポインタが指す値が0でないなら対応する[までジャンプ</td>
+					</tr>
+					<tr>
+						<td>^</td>
+						<td>なし</td>
+						<td>ポインタを上に1つ移動</td>
+					</tr>
+					<tr>
+						<td>v</td>
+						<td>なし</td>
+						<td>ポインタを下に1つ移動</td>
 					</tr>
 				</table>
 			</li>	
